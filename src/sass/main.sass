@@ -1,0 +1,963 @@
+@font-face
+  font-family: 'Bebas Neue Book'
+  src: url('../fonts/BebasNeueBook.eot')
+  src: url('../fonts/BebasNeueBook.eot?#iefix') format("embedded-opentype"), url('../fonts/BebasNeueBook.woff2') format("woff2"), url('../fonts/BebasNeueBook.woff') format("woff"), url('../fonts/BebasNeueBook.ttf') format("truetype"), url('../fonts/BebasNeueBook.svg#BebasNeueBook') format("svg")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Bebas Neue'
+  src: url('BebasNeue.eot')
+  src: url('../fonts/BebasNeue.eot?#iefix') format("embedded-opentype"), url('../fonts/BebasNeue.woff2') format("woff2"), url('../fonts/BebasNeue.woff') format("woff"), url('../fonts/BebasNeue.ttf') format("truetype"), url('../fonts/BebasNeue.svg#BebasNeue') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+::-webkit-scrollbar
+  width: 0px
+  background: transparent
+  
+::-webkit-scrollbar-thumb
+  background: #FF0000
+
+html
+  height: 100%
+  overflow: scroll
+  overflow-x: hidden
+
+body
+  min-height: 100%
+  margin: 0
+  padding: 0
+  font-size: 0px
+  font-family: 'Bebas Neue', sans-serif
+  font-weight: 100
+
+.clear
+  clear: both
+
+.elements
+  display: inline-block
+  vertical-align: top
+
+.context
+  width: 100%
+  height: 100vh
+  padding: 0px
+  margin: 0px
+  background: url(../img/levels/stand.png) no-repeat center fixed
+  background-size: cover
+
+.row_main
+  width: calc(100% / 3)
+  display: inline-block
+  min-height: 85vh
+  height: auto
+  overflow: hidden
+
+.left_row, .center_row, .right_row
+
+.footer
+  width: 100%
+  height: 15vh
+
+.area_main
+  width: 80%
+  height: 80vh
+  margin: auto
+  margin-top: 5vh
+  font-size: 15px
+  overflow: scroll
+
+.left_panel
+
+.panel_title
+  width: 100%
+  height: auto
+  min-height: 6vh
+  padding: 1vh 0px
+  background: #467839
+  text-align: center
+  color: white
+  text-transform: uppercase
+  h2
+    font-size: 35px
+
+.main_panel_container
+  width: 100%
+  height: auto
+  min-height: 1px
+  margin: auto
+  font-size: 0px
+  overflow: scroll
+
+.left_aside
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 0 20px 10px 0
+  border-color: transparent #2d5123 transparent transparent
+
+.right_aside
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 10px 20px 0 0
+  border-color: #2d5123 transparent transparent transparent
+
+.container-plie
+  width: 5%
+  height: 10px
+  display: inline-block
+  vertical-align: top
+  overflow: hidden
+
+.panel
+  width: 90%
+  padding-top: 10px
+  background: #ede5d8
+  display: inline-block
+  vertical-align: top
+  border-bottom-left-radius: 5px
+  border-bottom-right-radius: 5px
+  box-shadow: 1px 1px 3px black
+
+.line-panel
+  width: 25%
+  height: 1vh
+  background-color: #e96e2a
+  display: inline-block
+  margin-top: 3vh
+  display: inline-block
+  transition: ease-in 0.5s all
+
+.title_panel
+  width: 50%
+  height: auto
+  min-height: 1px
+  background: #ede5d8
+  font-size: 25px
+  color: #323333
+  margin: auto
+  margin-top: -1vh
+  display: inline-block
+  text-align: center
+  text-transform: uppercase
+
+.container-panel-text
+  width: 90%
+  min-height: 10px
+  margin: 0 auto
+  font-size: 10px
+  padding: 10px 0px
+  font-size: 0px
+
+  &:hover
+    font-weight: bold
+
+.item
+  width: 100%
+  height: auto
+  min-height: 10px
+  padding: 2px
+  cursor: pointer
+
+.bought
+  font-weight: bold
+  pointer-events: none
+
+.tooExpensive
+  pointer-events: none
+  opacity: 0.5
+  
+.separation
+  width: 100%
+  height: auto
+  margin-bottom: 1vh
+
+.name_element
+  float: left
+  font-size: 20px
+  text-transform: uppercase
+  color: #323233
+  margin-top: 2vh
+
+.price_element
+  float: right
+  font-size: 20px
+  color: #323233
+  font-weight: bold
+  margin-top: 2vh
+
+.description_element
+  margin-top: 1vh
+  font-size: 13px
+  color: #e96e2a
+  font-family: 'Bebas Neue Book'
+
+.amelioration
+  width: 160px
+  height: 150px
+  margin: auto
+  background-color: #d6c9b4
+  position: relative
+  margin-top: 1vh
+
+.goal
+  font-size: 15px
+  text-align: center
+  margin-top: 10px
+  margin-bottom: 10px
+  line-height: 19px 
+
+.unavailable
+  pointer-events: none
+  opacity: 0.7
+  cursor: not-allowed
+
+.level-up-price
+  position: absolute
+  bottom: 0px
+  left: 0px
+  width: 100%
+  height: 20px
+  background-color: white
+  padding: 10px 0px
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: auto
+  min-height: 10px
+  padding: 3px 0px
+  text-align: center
+  font-size: 10px
+
+.level-up-img
+  height: auto
+  width: 150px
+  display: block
+  margin: 0 auto
+
+.container-chiffres
+  width: 90%
+  margin: 0 auto
+  font-size: 10px
+  text-align: center
+  padding: 2% 0
+
+.chiffre_affaire
+  font-size: 30px
+  text-transform: uppercase
+
+.beer-second
+  font-size: 15px
+  margin-top: 3vh
+  color: #e96e2a
+
+.staff-container
+  width: 300px
+  height: auto
+  min-height: 10px
+  margin: 1vh auto
+  transition: ease-in 0.5s all
+
+.staff
+  width: 80px
+  height: 80px
+  display: inline-block
+  background-color: #d6c9b4
+  margin: 15px 10px
+  position: relative
+  transition: ease-in 0.5s all
+  cursor: pointer
+  transition: all 300ms ease-in-out
+  
+  &:hover > .info
+    display: block
+
+  img
+    width: inherit
+
+
+.info
+  height: 93%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.81);
+  position: absolute;
+  top: 0;
+  display: none
+  transition: all 300ms ease-in-out
+  font-size: 15px
+  color: #fff 
+
+.info p
+  text-align: center
+  margin-top: 32px
+
+.round
+  width: 20px
+  height: 20px
+  min-height: 20px
+  position: absolute
+  left: -10%
+  top: -10%
+  background-color: #e96e2a
+  text-align: center
+  border-radius: 100%
+  font-size: 11px
+  overflow: hidden
+  color: white
+  padding-top: 5px
+  transition: ease-in 0.5s all
+  font-family: 'Bebas Neue Book'
+  z-index: 99
+
+.round2 
+   width: 20px
+   height: 20px
+   min-height: 20px
+   position: absolute
+   right: 0
+   top: 0
+   background-color: #b93515
+   text-align: center
+   font-size: 11px
+   overflow: hidden
+   color: white
+   padding-top: 5px
+   transition : ease-in 0.5s all
+   font-family: 'Bebas Neue Book'
+   border-bottom-left-radius: 20%
+   z-index: 99
+
+.hire
+  position: absolute
+  bottom: -10%
+  left: -5px
+  width: 114% 
+  height: 15px
+  background-color: #e96e2a
+  border-radius: 2px
+  font-size: 13px
+  text-align: center
+  color: white
+  transition: ease-in 0.5s all
+  padding-top: 2px
+  z-index: 99
+
+
+.container_footer
+  width: 95%
+  margin: auto
+  position: relative
+  height: 15vh
+
+.tonneau
+  position: absolute
+  top: 10px
+  left: 0px
+  width: 100px
+  height: 61px
+  background: url(http://i.imgur.com/2kSrkqL.png)
+  background-size: cover
+  background-position: center center
+  z-index: 999
+
+.pay_day
+  position: absolute
+  right: 0
+  top: 20px
+  width: 200Px
+  height: 40px
+  font-size: 0px
+  z-index: 99
+
+.text-pay
+  width: 180px
+  min-height: 10px
+  padding: 3px 0px
+  font-size: 20px
+  background: #e96e2a
+  text-transform: uppercase
+  text-align: center
+  color: white
+
+.indicator-pay
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 10px 15px 0 15px
+  border-color: #e96e2a transparent transparent transparent
+  margin: auto
+
+.timeline
+  width: 100%
+  height: 25px
+  background-color: #afaaa7
+  border-radius: 30px
+  position: absolute
+  top: 68px
+  z-index: 9
+
+.fill 
+  width: 50%
+  height: 21px
+  background-color: #ffe43d
+  border-radius: 30px
+  margin-top: 2px
+  animation : fillBarre 20s linear infinite
+
+@keyframes fillBarre 
+  0% 
+    width: 0%
+   
+  100% 
+    width: 100%
+
+@media screen and (max-width: 1260px)
+  .staff-container
+    width: 250px
+  .staff
+    width: 60px
+    height: 60px
+    transition: ease-in 0.5s all
+  .round
+    width: 20px
+    height: 20px
+    min-height: 20px
+    font-size: 12px
+    transition: ease-in 0.5s all
+  .hire
+    width: 100%
+    height: 15px
+    font-size: 9px
+    position: absolute
+    left: 0px
+    font-size: 13px
+    transition: ease-in 0.5s all
+  .container-boxes
+    width: 100%
+
+@media screen and (max-width: 1100px)
+  .staff-container
+    width: 100%
+    height: auto
+    min-height: 10px
+    margin: 3vh auto
+    transition: ease-in 0.5s all
+  .staff
+    width: calc(97% / 3)
+    height: 80px
+    transition: ease-in 0.5s all
+    margin: 1px
+  .round
+    border-radius: 0px
+    left: 0
+    top: 0
+    transition: ease-in 0.5s all
+  .hire
+    position: absolute
+    bottom: 0
+    left: 0px
+    width: 100%
+    border-radius: 0px
+    transition: ease-in 0.5s all
+  .line-panel
+    width: 15%
+    transition: ease-in 0.5s all
+  .title_panel
+    width: 70%
+
+@media screen and (max-width: 900px)
+  .staff
+    width: 48%
+    height: 80px
+    transition: ease-in 0.5s all
+    border: 2px solid #ede5d8
+  .round
+    border-radius: 0px
+    left: 0
+    top: 0
+    transition: ease-in 0.5s all
+  .hire
+    position: absolute
+    bottom: 0
+    left: 0px
+    width: 100%
+    border-radius: 0px
+    transition: ease-in 0.5s all
+
+@media screen and (max-width: 850px)
+  .area_main
+    width: 100%
+    margin: auto
+  .panel_title
+    width: 100%
+    h2
+      font-size: 2em
+  .main_panel_container
+    width: 100%
+  .container-plie
+    display: none
+  .panel
+    width: 100%
+  .line-panel
+    width: 5%
+  .title_panel
+    width: 90%
+  .container-boxes
+    width: 100%
+    height: auto
+    min-height: 10px
+    margin: auto
+    font-size: 0px
+    margin-top: 2vh
+    overflow-y: hidden
+  .panel
+    overflow-y: scroll
+  .staff
+    width: 48%
+    height: 80px
+    transition: ease-in 0.5s all
+    border: 2px solid #ede5d8
+  .round
+    border-radius: 0px
+    left: 0
+    top: 0
+    transition: ease-in 0.5s all
+  .hire
+    position: absolute
+    bottom: 0
+    left: 0px
+    width: 100%
+    border-radius: 0px
+    transition: ease-in 0.5s all
+
+@media screen and (max-width: 500px)
+  .context
+    position: relative
+  .row_main
+    width: 0px
+    display: block
+    height: auto
+    overflow: hidden
+  .left_row
+    width: 49%
+    position: absolute
+    top: 10vh
+    left: 0px
+    height: 60vh
+  .center_row
+    width: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+    min-height: 10vh
+  .right_row
+    width: 49%
+    position: absolute
+    top: 10vh
+    right: 0px
+  .footer
+    width: 100%
+    height: 15vh
+    position: absolute
+    bottom: 0px
+
+@media screen and (max-height: 700px)
+  .panel
+    padding-top: 0px
+  .container-panel-text
+    padding: 3px 0px
+  .container-chiffres
+    width: 90%
+    margin: 0 auto
+    font-size: 10px
+    text-align: center
+    padding: 2vh 0
+  .timeline
+    top: 50px
+  .pay-day
+    top: 10px
+  .tonneau
+    top: 16px
+    left: 11px
+    width: 66px
+    height: 38px
+  .bierres_vendues
+    margin-top: 1vh
+  .staff-container
+    height: auto
+    min-height: 10px
+    margin: 2vh auto
+    text-align: center
+    display: block
+    transition: ease-in 0.5s all
+  .staff
+    width: 70px
+    height: 70px
+    margin: 10px 15px
+
+  // BEER
+
+.beer
+  width: 190px
+  height: 300px
+  margin: auto
+  transition: 300ms ease-in all
+
+
+.rewarding
+  width: 200px
+  height: 200px
+  margin: auto
+
+.container-auto
+  position: relative
+  width: 190px
+  height: 300Px
+
+.beer:active
+  transition: 300ms ease-in all
+  transform: scale(0.9)
+
+.glass
+  width: 150px
+  height: 200px
+  background-color: #d2d2d2
+  border-radius: 30px
+  border-top-left-radius: 0px
+  border-top-right-radius: 0px
+  position: absolute
+  top: 70px
+  left: 30px
+  z-index: 0
+
+.liquid
+  width: 130px
+  height: 190px
+  background-color: #efc84a
+  border-radius: 30px
+  border-top-left-radius: 0px
+  border-top-right-radius: 0px
+  margin: auto
+
+.bulles
+  width: 130px
+  height: 190px
+  margin: auto
+  position: relative
+
+.bulleElement
+  width: 5px
+  height: 5px
+  background-color: white
+  border-radius: 100%
+
+.bulle1
+  opacity: 0.3
+  position: absolute
+  bottom: 0px
+  left: 4px
+  animation: AnimBulle1 1.2s infinite ease-out
+
+.bulle2
+  opacity: 0.5
+  position: absolute
+  bottom: 20px
+  left: 22px
+  animation: AnimBulle2 2.7s infinite ease-out
+
+.bulle3
+  opacity: 0.3
+  position: absolute
+  bottom: 15px
+  left: 37px
+  animation: AnimBulle3 3.1s infinite ease-out
+
+.bulle4
+  opacity: 0.6
+  position: absolute
+  bottom: 5px
+  left: 63px
+  animation: AnimBulle4 1.4s infinite ease-out
+
+.bulle5
+  opacity: 0.4
+  position: absolute
+  bottom: 20px
+  left: 75px
+  animation: AnimBulle5 2.2s infinite ease-out
+
+.bulle6
+  opacity: 0.6
+  position: absolute
+  bottom: 5px
+  left: 100px
+  animation: AnimBulle6 4.1s infinite ease-out
+
+.bulle7
+  opacity: 0.4
+  position: absolute
+  bottom: 10px
+  left: 110px
+  animation: AnimBulle7 1.5s infinite ease-out
+
+.bulle8
+  opacity: 0.4
+  position: absolute
+  bottom: 10px
+  left: 125px
+  animation: AnimBulle8 3s infinite ease-out
+
+.mousse
+  width: 190px
+  height: 80px
+  position: relative
+  margin: auto
+  position: absolute
+  top: 0px
+  left: 10px
+  z-index: 20
+
+.mousseElement
+  background-color: white
+  border-radius: 100%
+  position: absolute
+  width: 50px
+  height: 50px
+
+.mousse1
+  bottom: -10px
+  left: 10px
+
+.mousse2
+  bottom: -5px
+  left: 30px
+
+.mousse3
+  bottom: -15px
+  left: 40px
+
+.mousse4
+  bottom: -10px
+  left: 84px
+
+.mousse5
+  bottom: -20px
+  left: 120px
+
+.mousse6
+  top: 20px
+  left: 70px
+
+.mousse7
+  top: 20px
+  left: 35px
+
+.mousse8
+  top: 23px
+  left: 105px
+
+.mousse9
+  bottom: 0px
+  left: 130px
+
+.handler
+  width: 30px
+  height: 100px
+  position: absolute
+  top: 100px
+  left: 0px
+
+.container_fluid
+  width: 100%
+  height: 100%
+  position: relative
+
+.handler1
+  width: 30px
+  height: 15px
+  background-color: #d2d2d2
+  border-radius: 15px
+  position: absolute
+  right: 0px
+  top: 0px
+  border-top-right-radius: 0px
+  border-bottom-right-radius: 0px
+
+.handler2
+  width: 15px
+  height: 100px
+  background-color: #d2d2d2
+  border-radius: 0px
+  position: absolute
+  left: 0px
+  top: 0px
+  border-top-left-radius: 10px
+  border-bottom-left-radius: 10px
+
+.handler3
+  width: 30px
+  height: 15px
+  background-color: #d2d2d2
+  border-radius: 15px
+  position: absolute
+  right: 0px
+  bottom: 0px
+  border-top-right-radius: 0px
+  border-bottom-right-radius: 0px
+
+@keyframes AnimBulle1
+  0%
+    bottom: 0px
+    opacity: 0.3
+
+  70%
+    opacity: 0.3
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle2
+  0%
+    bottom: 20px
+    opacity: 0.5
+
+  70%
+    opacity: 0.5
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle3
+  0%
+    bottom: 15px
+    opacity: 0.3
+
+  70%
+    opacity: 0.3
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle4
+  0%
+    bottom: 5px
+    opacity: 0.6
+
+  70%
+    opacity: 0.6
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle5
+  0%
+    bottom: 20px
+    opacity: 0.4
+
+  70%
+    opacity: 0.4
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle6
+  0%
+    bottom: 5px
+    opacity: 0.6
+
+  70%
+    opacity: 0.6
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle7
+  0%
+    bottom: 10px
+    opacity: 0.4
+
+  70%
+    opacity: 0.4
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes AnimBulle8
+  0%
+    bottom: 5px
+    opacity: 0.6
+
+  70%
+    opacity: 0.6
+
+  100%
+    bottom: 190px
+    opacity: 0
+
+
+@keyframes clicked
+  0%
+    top: 300px
+    left: 50%
+    opacity: 1
+
+  70%
+    opacity: 0.5
+
+  100%
+    top: 50px
+    left: 50%
+    opacity: 0
+    display: none
+
+
+@keyframes fillBarre
+  0%
+    width: 0%
+
+  100%
+    width: 100%
+
+
+.clickEvent
+  width: 40px
+  height: 40px
+  left: 50%
+  background-color: white
+  border-radius: 50%
+  position: relative
+  opacity: 0
+  animation: clicked 0.3s 1
+  color: black
+  font-size: 25px
+  text-align: center
+  padding-top: 5px
+
+.round1
+  width: 300px
+  height: 300px
+  border-radius: 50%
+  background-color: white
+  position: absolute
+  top: 30px
+  left: 0px
+  display: none
+  animation: clicked 4s infinite ease-out
